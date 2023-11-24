@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    hello
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"/>
+      <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="spaced bg-orange center txt-black d-flex">
+        <div class="navigation">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="#">Accueil</a></li>
+            <li><a class="p-10 txt-black" href="#">Histoire</a></li>
+            <li><a class="p-10 txt-black" href="#">Personnages</a></li>
+            <li><a class="p-10 txt-black" href="#">Communauté</a></li>
+          </ul>
+        </div>
+
+        <div class="mobilhead centered  d-flex center">
+          <div class="mobilenav">
+            <i class="fa-solid fa-circle-chevron-down dropdown"></i>
+            <ul class="deroulant">
+                   <!-- <li><a href="#">test1</a></li>
+                   <li><a href="#">test2</a></li>
+                   <li><a href="#">test3</a></li>
+                   <li><a href="#">test4</a></li>
+                   <li><a href="#">test5</a></li>
+               </ul> -->
+          </div>
+          <div class="logocontainer">
+            <img src="images-png/logo.png" alt="" class="logo" />
+          </div>
+          <div class="search">
+            <div class="searchbar center d-flex">
+              <input class="textinput bg-lgray" type="text" placeholder="search"
+              />
+              <i class="fa fa-search searchicon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="login">
+          <ul class="d-flex">
+            <li><a class="p-10 txt-black" href="#">Se connecter</a></li>
+            <li><a class="p-10 txt-black" href="#">S'enregistrer</a></li>
+            <li><a class="p-10 txt-black" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="langue">
+         
+              <select id="langue" onchange="changerLangue()">
+                <option value="fr">Fr</option>
+                <option value="en">En</option>
+                <option value="en">It</option>
+            </select>
+  
+
+        </div>
+      </nav>
+    </header>
+    <main class="container bg-lgray center">
+      <section class="welcome d-flex">
+        <div class="video">
+          <iframe width="333" height="238" src="https://www.youtube.com/embed/3lt_ERh7K4Q" title="NARUTO SHIPPUDEN - EP01 VF - Retour au pays" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="txtcontainer center">
+          <h1>Explorez, Apprenez, Partagez : </h1>
+          <p class="bg-logo">Bienvenue sur notre site, un espace dédié à l'exploration, à la découverte et à l'apprentissage. Que vous soyez ici pour obtenir des informations, partager des idées ou simplement vous divertir, nous sommes ravis de vous accueillir.</p>
+        </div>
+        
+      </section>
+      <section class="actualite">
+      <h2>Actualités</h2>
+      <p>Découvrez les aventures de naruto dans cette page dédié aux plus grand fans du jeune garçon.</p>
+      <div class="carrousel">
+        
+      </div>
+    </section>
+    </main>
+    <footer>
+      <div class="conditions"></div>
+      <div class="reseaux"></div>
+    </footer>
+  </body>
 </html>
