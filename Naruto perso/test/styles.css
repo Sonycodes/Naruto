@@ -1,25 +1,132 @@
-/* CSS Styles */
-body {
+*{
+    box-sizing: border-box;
     margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .carousel-container {
+    padding: 0;
+}
+
+body{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.slider-1{
+    max-width: 1200px; 
+    /* changer width par rapport container */
+    margin: 100px auto;
     overflow: hidden;
-    width: 100%;
-  }
-  
-  .carousel-wrapper {
+    border: 1px solid aliceblue;
+}
+
+.slider-1 .slider{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .carousel-slide {
-    display: flex;
-  }
-  
-  .carousel-slide img {
+    animation: slider-1 15s infinite ease-in-out;
+}
+
+.slider-1 .baniere{
+    background-color: gray;
+    /* flex-shrink: 0; */
+    padding: 20px 10px;
     width: 100%;
-    margin: 0 10px; /* Adjust margin as needed */
-  }
+color: aliceblue;
+font-size: xx-large;
+}
+
+img{
+height: 202px;
+width: 396px;
+padding: 0 10px;
+object-fit: cover;
+}
+
+/* 
+
+5% trabsition 4*5= 20
+nb de pause : 
+il reste 80(%) /4 = 20 % par pause image
+ 20
+ 80/20 40%
+
+*/
+@keyframes slider-1 {
+    0%,
+    40% {
+      transform: translateX(0);
+    }
+    45%,
+    100% {
+      transform: translateX(-100%);
+    }
+   
+  } 
+
+
+
+
+
+
+/* oublei pas de le fermer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  /* Verticale */
+  
+  .slider-2 {
+    max-width: 600px;
+    height: 200px;
+    margin: 100px auto;
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+  }
+  .slider-2 .slider {
+    height: 100%;
+    animation: slider-2 12s infinite ease-in-out;
+    
+    /* Pour inverser l'animation */
+    /* display: flex; 
+    flex-direction: column-reverse; */
+  }
+  .slider-2 p {
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+    color: #f1f1f1;
+  }
+  @keyframes slider-2 {
+    0%,
+    20% {
+      transform: translateY(0);
+    }
+    25%,
+    45% {
+      transform: translateY(-100%);
+    }
+    50%,
+    70% {
+      transform: translateY(-200%);
+    }
+    75%,
+    95% {
+      transform: translateY(-300%);
+    }
+    100% {
+      transform: translateY(-400%);
+    }
+  }

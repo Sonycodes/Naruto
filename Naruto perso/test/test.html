@@ -1,54 +1,32 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <label for="langue">Sélectionnez la langue :</label>
-  <select id="langue" onchange="changerLangue()">
-      <option value="fr">Français</option>
-      <option value="en">Anglais</option>
-  </select>
-  
-  <p id="message">Bienvenue sur notre site !</p> 
-  
-   <script>
-      function changerLangue() {
-          var selectLangue = document.getElementById("langue");
-          var message = document.getElementById("message");
-  
-
-          if (selectLangue.value === "fr") {
-              message.innerHTML = "Bienvenue sur notre site !";
-          } else if (selectLangue.value === "en") {
-              message.innerHTML = "Welcome to our website!";
-          }
-      }
-  </script> 
-  
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Carousel</title>
+  <title>Document</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
-
-<div class="carousel-container">
-  <div class="carousel-wrapper">
-    <div class="carousel-slide">
-      <img src="logo.png" alt="Image 1">
-      <img src="logo.png" alt="Image 2">
-      <img src="logo.png" alt="Image 3">
-     
+ <div class="slider-container slider-1">
+  <div class="slider">
+    <div class="baniere 1 d-flex">
+      <img src="event1.png" alt="">
+      <img src="event2.png" alt="">
+      <img src="event3.png" alt="">
     </div>
+    <div class="baniere 2 d-flex">
+      <img src="event4.png" alt="">
+      <img src="event1.png" alt="">
+      <img src="event2.png" alt="">
+    </div>
+    <div class="baniere 1 d-flex">
+      <img src="event1.png" alt="">
+      <img src="event2.png" alt="">
+      <img src="event3.png" alt="">
+    </div>
+
   </div>
-</div>
+ </div> 
 </body>
 </html>
