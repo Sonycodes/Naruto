@@ -14,22 +14,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-body::before {
-  content: "";
-  background-image: url(../images-png/bg-bd2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 0.07;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
+
 
 main {
   flex: 1;
@@ -41,22 +26,6 @@ main {
   display: flex;
 }
 
-main::before {
-  content: "";
-  background-image: url(../images-png/bg-logo.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
 
 textarea,
 input {
@@ -243,6 +212,38 @@ button:active{
   .mobilenav {
     display: none;
   }
+  body::before {
+    content: "";
+    background-image: url(../images-png/bg-bd2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.07;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+  main::before {
+    content: "";
+    background-image: url(../images-png/bg-logo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
 
 footer {
@@ -264,19 +265,35 @@ i:hover,
 .footertxt:hover {
   color: #f28607;
   font-size: 1em;
+  
 }
 
 @media (max-width: 780px) {
   body {
-    background-image: url(images-png/bgnaruto.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
   }
   main {
     padding-bottom: 5vh;
     padding-top: 5vh;
     z-index: 0;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  main::before {
+    content: "";
+    background-image: url(../images-png/bg-logo.png);
+    background-color: #6c6c6c;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
   }
   .login {
     display: none;
@@ -329,17 +346,17 @@ i:hover,
     width: 100vw;
     height: 100px;
     padding: 10px;
+
   }
   .footertxt {
     font-size: 0.5em;
   }
 
   .img-contact {
-    position: absolute;
-    /* transform: translatex(110%); */
-    transform: translate(60%, 90%);
-  width: 250px;
-  height: 200px;
+    bottom: 0;
   z-index: 2;
+  width: 200px;
+  height: 150px;
+  transform: translatex(50%);
   }
 }
