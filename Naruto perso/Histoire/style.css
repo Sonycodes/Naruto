@@ -1,0 +1,209 @@
+
+/* bouton dropdown */
+
+ 
+.dropbtn {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius:50%;
+    border: solid 2px black;
+    width: 50px;
+       height: 50px;
+    background-color: #f28607;
+  }
+  .dropbtn::before{
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1em;
+       font-weight: 600;
+  
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align:center;
+    border-radius:2%;
+    font-size: large;
+    transform: translatex(-30%);
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #f28607;}
+  
+  .show {display: block;}
+
+
+
+
+
+
+
+
+
+/* debut footer */
+
+footer{
+    background-color: black;
+    /* bottom: 0; */
+    /* height: 20%; */
+  }
+  
+  .footertxt{
+    font-size: 0.7em;
+  }
+  
+  i:hover:not(.dropdown), .footertxt:hover{
+    color: #f28607;
+    font-size: 1em;
+  }
+  
+  
+
+
+
+
+
+/* debut responsive mobil */
+
+@media screen and (max-width: 768px) {
+    main{
+      background-color: unset;
+      /* unset : desactive la propriété d'avant */
+    }
+  
+  .login, .navigation, #langue {
+    display: none;
+  }
+  
+  .logocontainer {
+    order: 2;
+  }
+  
+  .search {
+    order: 1;
+    padding-right: 0;
+  }
+  
+  .textinput::placeholder{
+    font-size: large;
+  }
+  .textinput {
+    border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    font-size: large;
+    padding-left: 10px;
+  }
+  .searchicon {
+    font-size: 20px;
+     transform: translate(-200%);
+  }
+  
+  .logocontainer{
+    width: 100px;
+    height: 100px;
+  }
+  .logo{
+    width: 100%;
+    height: 100%;
+  }
+  .mobilhead{
+    width: 100vw;
+    height: 100px;
+  gap: 20%;
+  }
+  /*permet de le faire apparaitre alors qu'l esr en display:none par defaut */
+  .mobilenav{
+    display: block;
+  }
+  
+  
+  
+  
+  
+  
+  }
+  /* fin searchbar */
+  
+    /* debut responsive tablette */
+  /* regarder doc breakpoints   992*/
+  @media screen and (max-width: 1200px) and (min-width: 768px){
+    .login, .navigation, #langue {
+      display: none;
+    }
+  
+    .logocontainer {
+      order: 2;
+    }
+    
+    .search {
+      order: 1;
+      padding-right: 0;
+    }
+  
+    .textinput::placeholder{
+      font-size: large;
+    }
+    .textinput {
+      border-radius: 50px;
+      height: 30px;
+      width: 250px;
+      font-size: large;
+      padding-left: 10px;
+    }
+    .searchicon {
+      font-size: 20px;
+       transform: translate(-200%);
+    }
+  
+    .logocontainer{
+      width: 100px;
+      height: 100px;
+    }
+    .logo{
+      width: 100%;
+      height: 100%;
+    }
+    .mobilhead{
+      width: 100vw;
+      height: 100px;
+   gap: 20%;
+    }
+  /*permet de le faire apparaitre alors qu'l esr en display:none par defaut */
+    .mobilenav{
+      display: block;
+    }
+    
+  }
+  
+    
