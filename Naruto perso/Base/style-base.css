@@ -18,7 +18,7 @@
   }
   
    main{
-    background-color: rgb(248, 248, 248);
+    background-color: #d9d9d9;
     flex: 1;
     padding: 1% 0;
     width:auto;
@@ -213,75 +213,17 @@
     .show {display: block;}
     .bg-before::before {
         content: "";
-        background: url(../images-png/bg-logo.png) center / contain no-repeat;
-        width: 100%;
-        height:100%;
+        background: url(../images-png/bg-logo.png) center / cover no-repeat;
+        width: 12vw;
+        height: 25vw;
         opacity: 0.4;
         position:absolute;
+       /* top: 0; */
         z-index: -1;
         
       }
-
-      /* nav baniere */
       
-.nav-banniere{
-    width: auto;
-    object-fit: contain;
-    height: 20vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.img-baniere{
-    margin-top: 5vh;
-    width: auto;
-    height: 100%;
-}
-
-
-/* main content */
-.perso-title{
-display: flex;
-justify-content: center
-;
-align-items: center;
-/* margin-top: 10%; */
-}
-
-.perso-title h1{
-    -webkit-text-stroke: 0.3px #f28607;
-    font-size: 5vw;
-    height: 15vw;
-    width: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
       /* debut footer */
       
       footer{
@@ -304,7 +246,12 @@ align-items: center;
       
       @media screen and (max-width: 1200px) {
         main{
-          background-color: #d9d9d9;
+          background-color: unset;
+          /* unset : desactive la propriété d'avant */
+        }
+        main{
+          width:auto;
+         padding-top: 15vw;
         }
       
       .login, .navigation, #langue {
@@ -350,16 +297,12 @@ align-items: center;
       .footertxt{
         font-size: 0.5em;
       }
-      .perso-title{
+      .history-title{
         -webkit-text-stroke: 0.3px #f28607;
-        font-size: 3vw;
+        font-size: 9vw;
+      
       }
-      .perso-title h1{
-        height: 20vw;
-    }
-    
-
-      } 
+      }
       
       /* debut responsive tablette */
       /* regarder doc breakpoints   992*/
@@ -368,7 +311,7 @@ align-items: center;
        .mobilhead{
         gap: 25%;
        }
-       /* main{
+       main{
        padding-top: 0vw;
-      } */
+      }
       }
